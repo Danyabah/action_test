@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <style>
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        flex-direction: column;
+      }
+      .btn {
+        background-color: #ff0033;
+        font-size: 24px;
+        padding: 16px;
+        border-radius: 15px;
+        border: none;
+        color: white;
+        width: 510px;
+        text-align: center;
+        font-family: "MTS";
+        font-weight: 600;
+      }
+      .buttons__container {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+      .video {
+        width: 500px;
+        height: 400px;
+      }
+      .wait,
+      .choice {
+        text-align: center;
+        font-size: 32px;
+        font-family: "MTS";
+        font-weight: 400;
+        color: #2f2f37;
+        margin-bottom: 16px;
+        margin-top: 16px;
+      }
+      .hidden {
+        display: none;
+      }
+    </style>
+
+    <div class="container">
+      <video class="video">
+        <source
+          src="https://www.dropbox.com/scl/fi/cxw9jj1t7ya9w3swf3chy/forest.mp4?rlkey=33ijskx7iukufznmt03br671a&dl=0"
+          type="video/mp4"
+        />
+      </video>
+
+      <!-- <div id="player" class="video"></div> -->
+      <div class="end">покупатель не прошел</div>
+      <div class="wait">Досмотрите видео</div>
+      <div class="choice hidden">Выберите ответ</div>
+      <div class="buttons__container"></div>
+    </div>
+    <!-- <script src="./script.js"></script> -->
+  </body>
+</html>
